@@ -142,7 +142,7 @@ export const Navbar = ({
   return (
     <div
       className={cn(
-        "flex items-center justify-between mx-auto w-[90vw] p-4 z-10",
+        "flex items-center justify-between mx-auto w-[90vw] p-4 z-10 mt-[5vh]",
         containerClassName
       )}
     >
@@ -150,28 +150,20 @@ export const Navbar = ({
       <h1 className="text-3xl font-semibold text-slate-900">Briska</h1>
 
       {/* Navbar Items */}
-      <div
-        className={cn(
-          "flex flex-row items-center justify-center p-2 rounded-full shadow-md bg-white",
-          containerClassName
-        )}
-      >
+      <div className="flex flex-row items-center justify-center p-2 rounded-full shadow-md bg-white">
         {navItems.map((item) => (
           <button
             key={item.value}
             onClick={() => handleClick(item)}
-            className={cn(
-              "relative px-4 py-2 rounded-full focus:outline-none ",
-              itemClassName
-            )}
+            className="relative px-4 py-2 rounded-full focus:outline-none"
           >
             {active.value === item.value && (
               <motion.div
                 layoutId="activeItem"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-slate-900 rounded-full", // No text-white here; handled in span
-                  activeItemClassName
+                  "absolute inset-0 rounded-full",
+                  "border border-slate-800 animate-shimmer bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                 )}
               />
             )}
