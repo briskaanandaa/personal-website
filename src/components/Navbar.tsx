@@ -146,10 +146,12 @@ export const Navbar = ({
       )}
     >
       {/* Logo */}
-      <h1 className="text-3xl font-semibold text-slate-900">Briska</h1>
+      <h1 className="text-3xl font-semibold text-slate-900 hidden lg:block">
+        Briska
+      </h1>
 
       {/* Navbar Items */}
-      <div className="flex flex-row items-center justify-center p-2 rounded-full shadow-md bg-white">
+      <div className="flex flex-row items-center justify-center p-2 rounded-full bg-white">
         {navItems.map((item) => (
           <button
             key={item.value}
@@ -182,7 +184,7 @@ export const Navbar = ({
       </div>
 
       {/* Social Media Icons */}
-      <div className="flex space-x-6">
+      <div className="space-x-6 hidden lg:flex">
         {socialLinks.map((link) => (
           <a
             key={link.href}
