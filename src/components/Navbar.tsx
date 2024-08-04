@@ -5,10 +5,16 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const navItems = [
-  { title: "Home", value: "home", href: "/" },
-  { title: "About", value: "about", href: "/" },
-  { title: "Work", value: "work", href: "/" },
+  { title: "Home", value: "home", href: "" },
+  { title: "About", value: "about", href: "" },
+  { title: "Work", value: "work", href: "" },
 ];
+
+const handleClick = (
+  event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+) => {
+  event.preventDefault(); // Mencegah tindakan default
+};
 
 const socialLinks = [
   {

@@ -5,14 +5,14 @@ const HeroSection = () => {
     <div className="w-full h-fit flex justify-center my-5 md:my-10 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
         <div className="lg:w-[50%] w-full h-fill flex flex-col justify-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 flex my-5">
-            Hi, I&apos;m Briska Ananda
+          <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 flex mt-5 mb-2">
+            Hello, My Name is Briska Ananda
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-slate-500 flex my-1">
+          <p className="text-lg sm:text-xl md:text-2xl text-slate-500 flex mb-8">
             A happy Web Developer who loves creating beautiful web experiences
             &amp; helping others grow in web development.
           </p>
-          <div className="flex flex-row gap-x-3 my-5">
+          <div className="flex flex-row gap-x-3 mb-5">
             <a href="https://www.figma.com/">
               <button className="gap-x-2 text-xs w-full sm:w-auto flex px-4 py-2 items-center justify-start align-center h-fit rounded-full font-semibold text-white border-2 bg-[#F24E1E]/50 border-[#F24E1E]">
                 <svg

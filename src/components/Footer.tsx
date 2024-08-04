@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="relative w-[90vw] md:w-[75vw] h-fit z-10">
         <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
           <div className="mb-6 sm:mb-0">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-1">
-              Wanna Work Together
+            <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-2">
+              Interested in Working Together?
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-slate-500">
               Take a shoot to connect with me!
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="w-full flex flex-col sm:flex-row justify-between">
+        <div className="w-full flex flex-col sm:flex-row justify-between mt-4 mb-2">
           <div className="text-sm font-normal text-slate-500 mb-4 sm:mb-2">
             <p>
               Made with NextJs and designed happily using Figma by
@@ -38,19 +38,19 @@ const Footer = () => {
           <div className="flex flex-row gap-x-5 justify-center sm:justify-end">
             <a
               href="https://github.com/briskaanandaa"
-              className="text-sm font-normal text-slate-500"
+              className="text-sm font-normal text-slate-500 hover:text-slate-900"
             >
               Github
             </a>
             <a
               href="https://linkedin.com/in/briskaanandaa"
-              className="text-sm font-normal text-slate-500"
+              className="text-sm font-normal text-slate-500 hover:text-slate-900"
             >
               Linkedin
             </a>
             <a
               href="mailto:briskaananda103@gmail.com"
-              className="text-sm font-normal text-slate-500"
+              className="text-sm font-normal text-slate-500 hover:text-slate-900"
             >
               Gmail
             </a>
