@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center my-5 md:my-10 z-10">
-      <div className="w-[90vw] h-fit flex flex-col lg:flex-row">
-        <div className="lg:w-[50%] w-full">
+      <div className="w-[90vw] flex flex-col lg:flex-row">
+        <div className="lg:w-[50%] w-ful h-[50vh] ">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 flex my-5">
             Hello, I'm Briska Ananda
           </h1>
@@ -101,15 +99,7 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-        <div className="lg:w-[50%] w-full h-[30vh] relative">
-          <Image
-            className="object-contain"
-            src="/briskaanandaa.svg"
-            alt="briskaanandaa"
-            layout="fill"
-            priority
-          />
-        </div>
+        <div className="lg:w-[50%] w-full h-[50vh] relative"></div>
       </div>
     </div>
   );
