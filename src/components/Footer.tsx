@@ -13,16 +13,17 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
           <div className="mb-6 sm:mb-0">
             <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-2">
-              Interested in Working Together?
+              Let&apos;s make magic happen!
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-slate-500">
-              Take a shoot to connect with me!
+              let&apos;s discuss how our collaboration can bring new ideas to
+              life.
             </p>
           </div>
 
           <div className="h-fill flex justify-center items-center w-full sm:w-auto">
             <button className="w-full sm:w-auto inline-flex px-4 py-2 animate-shimmer items-center justify-center h-fit rounded-full font-semibold text-white border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              Take a Shoot
+              Message Me
             </button>
           </div>
         </div>
@@ -30,7 +31,7 @@ const Footer = () => {
         <div className="w-full flex flex-col sm:flex-row justify-between mt-4 mb-2">
           <div className="text-sm font-normal text-slate-500 mb-4 sm:mb-2">
             <p>
-              Made with NextJs and designed happily using Figma by
+              Created with Next.js and designed with joy in Figma by
               <span className="font-semibold"> Briska Ananda</span>
             </p>
           </div>
