@@ -81,7 +81,7 @@ const socialLinks = [
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_28_900)">
+        <g clipPath="url(#clip0_28_900)">
           <path
             d="M1.63636 21.5045H5.45455V12.2318L0 8.1409V19.8682C0 20.7736 0.733636 21.5045 1.63636 21.5045Z"
             fill="#4285F4"
