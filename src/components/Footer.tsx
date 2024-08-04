@@ -16,8 +16,7 @@ const Footer = () => {
               Let&apos;s make magic happen!
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-slate-500">
-              let&apos;s discuss how our collaboration can bring new ideas to
-              life.
+              Our collaboration can bring new ideas to life.
             </p>
           </div>
 
