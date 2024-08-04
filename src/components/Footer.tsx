@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="w-full h-fit flex absolute justify-center bottom-0 bg-cover bg-center my-10 border-t-2 border-slate-300">
+    <div className="w-full h-fit flex absolute justify-center bottom-0 bg-cover bg-center my-5 md:px-10 border-t-2 border-slate-300">
       <div className="w-[90vw] h-fit z-10">
         <div className="flex flex-col sm:flex-row align-center justify-between py-5 md:py-10">
           <div className="mb-6 sm:mb-0">
@@ -22,7 +22,8 @@ const Footer = () => {
         <div className="w-full flex flex-col sm:flex-row justify-between">
           <div className="text-sm font-normal text-slate-500 mb-4 sm:mb-0">
             <p>
-              Made with NextJs and designed happily using Figma by Briska Ananda
+              Made with NextJs and designed happily using Figma by{" "}
+              <span className="font-semibold"> Briska Ananda</span>
             </p>
           </div>
 
