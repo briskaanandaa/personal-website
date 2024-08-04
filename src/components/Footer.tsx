@@ -31,7 +31,7 @@ const Footer = () => {
         <div className="w-full flex flex-col sm:flex-row justify-between mt-4 mb-2">
           <div className="text-sm font-normal text-slate-500 mb-4 sm:mb-2">
             <p>
-              Created with Next.js and designed with joy in Figma by
+              Made with Next.js and designed with joy in Figma by
               <span className="font-semibold"> Briska Ananda</span>
             </p>
           </div>
