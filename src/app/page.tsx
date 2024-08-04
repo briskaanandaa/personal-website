@@ -6,10 +6,9 @@ import { Navbar } from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col h-fit bg-white ">
+    <main className=" flex flex-col h-fit bg-white ">
       <HeaderGradient />
       <Navbar />
-      <HeroSection />
       <Footer />
       <FooterGradient />
     </main>
