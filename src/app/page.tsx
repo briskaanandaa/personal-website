@@ -5,7 +5,7 @@ import { Navbar } from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <main className=" flex flex-col h-fit w-full bg-white ">
+    <main className=" flex flex-col h-[100vh] w-full bg-white ">
       <HeaderGradient />
       <Navbar />
       <HeroSection />
