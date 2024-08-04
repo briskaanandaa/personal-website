@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center my-5 md:my-10 z-10">
@@ -144,14 +142,14 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="lg:w-[50%] w-full h-fill relative flex justify-center ">
-          <Image
+          {/* <Image
             src="/briskaanandaa.svg"
             alt="Header Gradient"
             width={720}
             height={100}
             priority
             style={{ width: "auto", height: "100%", objectFit: "cover" }}
-          />
+          /> */}
         </div>
       </div>
     </div>
