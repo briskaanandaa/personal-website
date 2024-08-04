@@ -2,13 +2,13 @@ const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center my-5 md:my-10 z-10">
       <div className="w-[90vw] flex flex-col lg:flex-row">
-        <div className="lg:w-[50%] w-ful h-[50vh] ">
+        <div className="lg:w-[50%] w-full h-[50vh]">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 flex my-5">
-            Hello, I'm Briska Ananda
+            Hello, I&apos;m Briska Ananda
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-slate-500 flex my-5">
-            A happy Web Developer who loves creating beautiful web experiences &
-            helping others grow in web development.
+            A happy Web Developer who loves creating beautiful web experiences
+            &amp; helping others grow in web development.
           </p>
           <div className="flex flex-row gap-x-3 my-5">
             <a href="https://www.figma.com/">
