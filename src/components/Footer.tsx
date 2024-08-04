@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="relative w-full h-fit flex justify-center bottom-0 py-8 md:py-10 border-t-2 border-slate-300 z-10">
       <div
-        className="absolute inset-0 bg-cover bg-center opacity-15"
+        className="absolute inset-0 bg-cover bg-center opacity-25"
         style={{ backgroundImage: "url(/footergradient.svg)" }}
       ></div>
       <div className="relative w-[90vw] h-fit z-10">
