@@ -1,8 +1,12 @@
 const Footer = () => {
   return (
-    <div className="w-full h-fit flex justify-center absolute bottom-0 my-5 md:my-10 border-t-2 border-slate-300 z-10">
-      <div className="w-[90vw] h-fit">
-        <div className="flex flex-col sm:flex-row align-center justify-between py-5 md:py-10">
+    <div className="relative w-full h-fit flex justify-center bottom-0 py-8 md:py-10 border-t-2 border-slate-300 z-10">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-15"
+        style={{ backgroundImage: "url(/footergradient.svg)" }}
+      ></div>
+      <div className="relative w-[90vw] h-fit z-10">
+        <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
           <div className="mb-6 sm:mb-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-1">
               Wanna Work Together
@@ -20,7 +24,7 @@ const Footer = () => {
         </div>
 
         <div className="w-full flex flex-col sm:flex-row justify-between">
-          <div className="text-sm font-normal text-slate-500 mb-4 sm:mb-0">
+          <div className="text-sm font-normal text-slate-500 mb-4 sm:mb-2">
             <p>
               Made with NextJs and designed happily using Figma by
               <span className="font-semibold"> Briska Ananda</span>
