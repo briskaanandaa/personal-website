@@ -141,7 +141,7 @@ export const Navbar = ({
   return (
     <div
       className={cn(
-        "flex flex-col lg:flex-row items-center justify-center lg:justify-between mx-auto w-[90vw] p-4 z-10 mt-[1vh]",
+        "flex flex-col lg:flex-row items-center justify-center lg:justify-between mx-auto w-[90vw] z-10 mt-[2vh] lg:mt-[4vh]",
         containerClassName
       )}
     >
