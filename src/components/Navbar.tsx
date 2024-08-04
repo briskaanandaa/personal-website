@@ -7,7 +7,7 @@ import { useState } from "react";
 const navItems = [
   { title: "Home", value: "home", href: "/" },
   { title: "About", value: "about", href: "/" },
-  { title: "Experiences", value: "experiences", href: "/" },
+  { title: "Work", value: "work", href: "/" },
 ];
 
 const socialLinks = [
@@ -141,7 +141,7 @@ export const Navbar = ({
   return (
     <div
       className={cn(
-        "flex items-center justify-between mx-auto w-[90vw] p-4 z-10 mt-[1vh]",
+        "flex flex-col lg:flex-row items-center justify-center lg:justify-between mx-auto w-[90vw] p-4 z-10 mt-[1vh]",
         containerClassName
       )}
     >
@@ -151,7 +151,7 @@ export const Navbar = ({
       </h1>
 
       {/* Navbar Items */}
-      <div className="flex flex-row items-center justify-center p-2 rounded-full bg-white">
+      <div className="flex flex-row items-center justify-center p-2 rounded-full bg-white lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
         {navItems.map((item) => (
           <button
             key={item.value}
