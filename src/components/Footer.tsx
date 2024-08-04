@@ -9,7 +9,7 @@ const Footer = () => {
           height: "auto",
         }}
       ></div>
-      <div className="relative w-[90vw] md:w-[80vw] h-fit z-10">
+      <div className="relative w-[90vw] md:w-[75vw] h-fit z-10">
         <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
           <div className="mb-6 sm:mb-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-1">

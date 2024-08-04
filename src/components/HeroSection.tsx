@@ -3,7 +3,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center my-5 md:my-10 z-10">
-      <div className="w-[90vw] md:w-[80vw] flex flex-col lg:flex-row">
+      <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
         <div className="lg:w-[50%] w-full h-fill flex flex-col justify-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 flex my-5">
             Hi, I&apos;m Briska Ananda
