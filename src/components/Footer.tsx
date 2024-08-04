@@ -22,19 +22,28 @@ const Footer = () => {
         <div className="w-full flex flex-col sm:flex-row justify-between">
           <div className="text-sm font-normal text-slate-500 mb-4 sm:mb-0">
             <p>
-              Made with NextJs and designed happily using Figma by{" "}
+              Made with NextJs and designed happily using Figma by
               <span className="font-semibold"> Briska Ananda</span>
             </p>
           </div>
 
           <div className="flex flex-row gap-x-5 justify-center sm:justify-end">
-            <a href="" className="text-sm font-normal text-slate-500">
+            <a
+              href="https://github.com/briskaanandaa"
+              className="text-sm font-normal text-slate-500"
+            >
               Github
             </a>
-            <a href="" className="text-sm font-normal text-slate-500">
+            <a
+              href="https://linkedin.com/in/briskaanandaa"
+              className="text-sm font-normal text-slate-500"
+            >
               Linkedin
             </a>
-            <a href="" className="text-sm font-normal text-slate-500">
+            <a
+              href="mailto:briskaananda103@gmail.com"
+              className="text-sm font-normal text-slate-500"
+            >
               Gmail
             </a>
           </div>

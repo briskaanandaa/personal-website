@@ -12,7 +12,7 @@ const navItems = [
 
 const socialLinks = [
   {
-    href: "https://github.com",
+    href: "https://github.com/briskaanandaa",
     svg: (
       <svg
         width="24"
@@ -43,7 +43,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "https://linkedin.com",
+    href: "https://linkedin.com/in/briskaanandaa",
     svg: (
       <svg
         width="24"
@@ -72,7 +72,7 @@ const socialLinks = [
     ),
   },
   {
-    href: "mailto:example@gmail.com",
+    href: "mailto:briskaananda103@gmail.com",
     svg: (
       <svg
         width="24"
