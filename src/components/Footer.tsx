@@ -1,11 +1,15 @@
 const Footer = () => {
   return (
-    <div className="relative w-full h-fit flex justify-center bottom-0 py-8 md:py-10 border-t-2 border-slate-300 z-10">
+    <div className="relative w-full h-fit flex justify-center bottom-0 py-8 md:py-10 border-t-2 border-slate-300 z-10 bg-white">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-25"
-        style={{ backgroundImage: "url(/footergradient.svg)" }}
+        style={{
+          backgroundImage: "url(/footergradient.svg)",
+          width: "100%",
+          height: "auto",
+        }}
       ></div>
-      <div className="relative w-[90vw] h-fit z-10">
+      <div className="relative w-[90vw] md:w-[80vw] h-fit z-10">
         <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
           <div className="mb-6 sm:mb-0">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-1">
