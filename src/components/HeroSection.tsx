@@ -6,7 +6,7 @@ const HeroSection = () => {
           <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 flex mt-5 mb-4 md:mb-0 flex-col lg:flex-row gap-x-2 md:items-center">
             Hey there! I&apos;m{" "}
             <span
-              className="px-4 py-2 md:ml-2 bg-gradient-to-r from-slate-900 to-slate-500 text-white rounded-lg text-4xl sm:text-4xl md:text-5xl w-fit"
+              className="px-4 py-2 md:ml-2 bg-gradient-to-r from-slate-900 to-slate-500 text-white rounded-lg text-4xl sm:text-4xl md:text-5xl w-fit shadow-lg"
               style={{ transform: "rotate(-1deg)" }}
             >
               Briska Ananda
