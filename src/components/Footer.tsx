@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="relative w-full h-fit flex justify-center bottom-0 py-7 md:py-9 border-t-2 border-slate-300 z-10 bg-white">
+    <div className="relative w-full h-fit flex justify-center bottom-0 py-5 md:py-5 border-t-2 border-slate-300 z-10 bg-white">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{
@@ -11,7 +11,7 @@ const Footer = () => {
       ></div>
       <div className="relative w-[90vw] md:w-[75vw] h-fit z-10">
         <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
-          <div className="mb-6 sm:mb-0">
+          <div className="mb-4 sm:mb-0">
             <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-2">
               Let&apos;s make magic happen!
             </h1>

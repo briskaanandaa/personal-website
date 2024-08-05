@@ -2,11 +2,11 @@ const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center my-5 md:my-10 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
-        <div className="lg:w-[50%] w-full h-fill flex flex-col justify-center">
+        <div className="w-full h-fill flex flex-col justify-center">
           <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 flex mt-5 mb-2">
             Hey there! I&apos;m Briska Ananda
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-slate-500 flex mb-8">
+          <p className="text-lg sm:text-xl md:text-5xl md:text-slate-900 md:font-semibold text-slate-500 flex mb-8">
             A happy Web Developer who loves creating beautiful web experiences
             &amp; help others grow in web development.
           </p>
@@ -141,16 +141,16 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-        <div className="lg:w-[50%] w-full h-fill relative flex justify-center ">
-          {/* <Image
+        {/* <div className="lg:w-[50%] w-full h-fill relative flex justify-center ">
+          <Image
             src="/briskaanandaa.svg"
             alt="Header Gradient"
             width={720}
             height={100}
             priority
             style={{ width: "auto", height: "100%", objectFit: "cover" }}
-          /> */}
-        </div>
+          />
+        </div> */}
       </div>
     </div>
   );
