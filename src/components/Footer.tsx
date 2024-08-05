@@ -13,16 +13,16 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
           <div className="mb-4 sm:mb-0">
             <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-4">
-              Let&apos;s make magic happen!
+              Let&apos;s Connect
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-slate-500">
-              Our collaboration can bring new ideas to life.
+              Our ollaboration can bring ideas to life.
             </p>
           </div>
 
           <div className="h-fill flex justify-center items-center w-full sm:w-auto">
-            <button className="w-full sm:w-auto inline-flex px-4 py-2 animate-shimmer items-center justify-center h-fit rounded-full font-semibold text-white border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-              Message Me
+            <button className="w-full sm:w-auto inline-flex px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
+              Say Hello
             </button>
           </div>
         </div>

@@ -147,7 +147,7 @@ export const Navbar = ({
   return (
     <div
       className={cn(
-        "flex flex-col lg:flex-row items-center justify-center lg:justify-between mx-auto w-[90vw] md:w-[75vw] z-10 mt-[2vh] lg:mt-[4vh]",
+        "flex flex-col lg:flex-row items-center justify-center lg:justify-between mx-auto w-[90vw] md:w-[75vw] z-10 mt-[4vh] lg:mt-[6vh]",
         containerClassName
       )}
     >
@@ -170,7 +170,7 @@ export const Navbar = ({
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
                   "absolute inset-0 rounded-full",
-                  "border border-slate-800 animate-shimmer bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                  "border border-slate-800 animate-shimmer bg-[linear-gradient(110deg,#0F172A,45%,#1e2631,55%,#0F172A)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                 )}
               />
             )}
