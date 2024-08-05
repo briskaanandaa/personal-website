@@ -6,19 +6,19 @@ export function FeaturesSectionDemo() {
     {
       title: "UI/UX Designer",
       description:
-        "I’m passionate about creating beautiful and user-friendly designs. I focus on making sure that every user interaction is smooth and enjoyable",
+        "Create beautiful, user-friendly designs, ensuring smooth and enjoyable interactions.",
       icon: <IconPencilCode />,
     },
     {
       title: "No Code Developer",
       description:
-        "I use no-code tools to build solutions quickly and efficiently. This helps businesses turn their ideas into reality without long development times.",
+        "Use no-code tools to build solutions quickly and efficientl, turning ideas into reality fast.",
       icon: <IconFrame />,
     },
     {
       title: "Front-End Developer",
       description:
-        "I turn designs into interactive websites. My work ensures that websites look good and work well, helping businesses achieve their goals.",
+        "Transform designs into websites, making them function smoothly and easy to use.",
       icon: <IconCode />,
     },
   ];
