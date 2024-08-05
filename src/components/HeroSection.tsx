@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-5 z-10">
+    <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
         <div className="w-full h-fill flex flex-col justify-center">
           <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 flex mt-5 mb-4 md:mb-0 flex-col lg:flex-row gap-x-2 md:items-center">
@@ -12,7 +12,7 @@ const HeroSection = () => {
               Briska Ananda
             </span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-5xl md:text-slate-900 md:font-semibold text-slate-500 flex mb-8">
+          <p className="text-lg sm:text-xl md:text-5xl md:text-slate-900 md:font-semibold text-slate-500 flex mb-4">
             A happy Web Developer who loves creating beautiful web experiences
             &amp; help others grow in web development.
           </p>
