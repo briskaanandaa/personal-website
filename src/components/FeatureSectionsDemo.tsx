@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
 import {
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconTerminal2,
+  IconCode,
+  IconPencilCode,
+  IconVectorBezier,
 } from "@tabler/icons-react";
 
 export function FeaturesSectionDemo() {
@@ -10,20 +10,20 @@ export function FeaturesSectionDemo() {
     {
       title: "UI/UX Designer",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
-    },
-    {
-      title: "Front-End Developer",
-      description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "I’m passionate about creating beautiful and user-friendly designs. I focus on making sure that every user interaction is smooth and enjoyable",
+      icon: <IconPencilCode />,
     },
     {
       title: "No Code Developer",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "I use no-code tools to build solutions quickly and efficiently. This helps businesses turn their ideas into reality without long development times.",
+      icon: <IconVectorBezier />,
+    },
+    {
+      title: "Front-End Developer",
+      description:
+        "I turn designs into interactive websites. My work ensures that websites look good and work well, helping businesses achieve their goals.",
+      icon: <IconCode />,
     },
   ];
   return (
