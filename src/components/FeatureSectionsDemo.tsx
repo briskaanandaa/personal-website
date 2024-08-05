@@ -1,9 +1,5 @@
 import { cn } from "@/lib/utils";
-import {
-  IconCode,
-  IconPencilCode,
-  IconVectorBezier,
-} from "@tabler/icons-react";
+import { IconCode, IconFrame, IconPencilCode } from "@tabler/icons-react";
 
 export function FeaturesSectionDemo() {
   const features = [
@@ -17,7 +13,7 @@ export function FeaturesSectionDemo() {
       title: "No Code Developer",
       description:
         "I use no-code tools to build solutions quickly and efficiently. This helps businesses turn their ideas into reality without long development times.",
-      icon: <IconVectorBezier />,
+      icon: <IconFrame />,
     },
     {
       title: "Front-End Developer",

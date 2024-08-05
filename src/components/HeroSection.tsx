@@ -18,7 +18,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-row gap-x-3">
             <a href="https://www.figma.com/">
-              <button className="gap-x-2 text-xs w-full sm:w-auto flex px-4 py-2 items-center justify-start align-center h-fit rounded-full font-semibold text-white border-2 bg-[#F24E1E]/50 border-[#F24E1E]">
+              <button className="gap-x-2 text-xs w-full sm:w-auto flex pl-1 pr-3 py-1 items-center justify-start align-center h-fit rounded-full font-semibold text-white border-2 bg-[#F24E1E]/50 border-[#F24E1E]">
                 <svg
                   width="22"
                   height="22"
@@ -68,7 +68,7 @@ const HeroSection = () => {
               </button>
             </a>
             <a href="https://www.framer.com/">
-              <button className="gap-x-2 text-xs w-full sm:w-auto flex px-4 py-2 items-center justify-start align-center h-fit rounded-full font-semibold text-white border-2 bg-[#0055ff]/50 border-[#0055ff]">
+              <button className="gap-x-2 text-xs w-full sm:w-auto flex pl-1 pr-3 py-1 items-center justify-start align-center h-fit rounded-full font-semibold text-white border-2 bg-[#0055ff]/50 border-[#0055ff]">
                 <svg
                   width="22"
                   height="22"
@@ -112,7 +112,7 @@ const HeroSection = () => {
               </button>
             </a>
             <a href="https://nextjs.org/">
-              <button className="gap-x-2 text-xs w-full sm:w-auto flex px-4 py-2 items-center justify-start align-center  h-fit rounded-full font-semibold text-white border-2 bg-[#000000]/50 border-[#000000]">
+              <button className="gap-x-2 text-xs w-full sm:w-auto flex pl-1 pr-3 py-1 items-center justify-start align-center  h-fit rounded-full font-semibold text-white border-2 bg-[#000000]/50 border-[#000000]">
                 <svg
                   width="22"
                   height="22"
