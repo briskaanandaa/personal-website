@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import HeaderGradient from "@/components/HeaderGradient";
 import HeroSection from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
+import PostSections from "@/components/PostSections";
 import WorkSections from "@/components/WorkSections";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <FeaturesSectionDemo />
       <WorkSections />
+      <PostSections />
       <Footer />
     </main>
   );
