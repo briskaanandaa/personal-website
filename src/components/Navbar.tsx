@@ -174,7 +174,6 @@ export const Navbar = ({
                 )}
               />
             )}
-
             <span
               className={cn(
                 "relative block font-semibold",
