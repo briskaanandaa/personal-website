@@ -1,10 +1,11 @@
 import { FeaturesSectionDemo } from "@/components/FeatureSectionsDemo";
-import Footer from "@/components/Footer";
-import HeaderGradient from "@/components/HeaderGradient";
-import HeroSection from "@/components/HeroSection";
-import { Navbar } from "@/components/Navbar";
-import PostSections from "@/components/PostSections";
-import WorkSections from "@/components/WorkSections";
+import { AboutSections } from "@/components/Sections/AboutSections";
+import Footer from "@/components/Sections/Footer";
+import HeaderGradient from "@/components/Sections/HeaderGradient";
+import HeroSection from "@/components/Sections/HeroSections";
+import { Navbar } from "@/components/Sections/Navbar";
+import PostSections from "@/components/Sections/PostSections";
+import WorkSections from "@/components/Sections/WorkSections";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
       <HeaderGradient />
       <Navbar />
       <HeroSection />
+
       <FeaturesSectionDemo />
+      <AboutSections />
       <WorkSections />
       <PostSections />
       <Footer />
