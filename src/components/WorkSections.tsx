@@ -15,13 +15,17 @@ const WorkSections = () => {
           </div>
 
           <div className="h-fill flex justify-center items-center w-full sm:w-auto">
-            <button className="w-full sm:w-auto inline-flex px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
+            <button className="hidden sm:inline-flex w-full sm:w-auto px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
               View All
             </button>
           </div>
         </div>
-
-        <BentoDemo />
+        <div className="mb-6 mt-2">
+          <BentoDemo />
+        </div>
+        <button className="w-full  inline-flex md:hidden lg:hidden px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
+          View All
+        </button>
       </div>
     </div>
   );

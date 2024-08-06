@@ -157,7 +157,7 @@ export const Navbar = ({
       </h1>
 
       {/* Navbar Items */}
-      <div className="flex flex-row items-center justify-center p-2 rounded-full bg-white lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+      <div className="flex flex-row items-center justify-center p-3 rounded-full bg-white lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
         {navItems.map((item) => (
           <button
             key={item.value}
@@ -170,7 +170,7 @@ export const Navbar = ({
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
                   "absolute inset-0 rounded-full",
-                  "border border-slate-800 animate-shimmer bg-[linear-gradient(110deg,#0F172A,45%,#1e2631,55%,#0F172A)] bg-[length:200%_100%] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                  "border border-slate-800 animate-shimmer bg-[linear-gradient(110deg,#0F172A,45%,#1e2631,55%,#0F172A)] bg-[length:200%_100%] transition-colors ring-4 ring-slate-300  "
                 )}
               />
             )}

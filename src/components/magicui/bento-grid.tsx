@@ -48,7 +48,7 @@ const BentoCard = ({
     )}
   >
     <div>{background}</div>
-    <div className="pointer-events-none z-10 flex transform-gpu flex-col lg:w-fit lg:mx-4 mx-auto w-[95%] gap-1 transition-all duration-300 group-hover:-translate-y-14 px-4 py-2 bg-slate-900 mb-4 rounded-lg">
+    <div className="pointer-events-none z-10 flex transform-gpu flex-col lg:w-fit lg:mx-4 mx-auto w-[95%] gap-1 transition-all duration-300 group-hover:-translate-y-14 px-4 py-2 bg-slate-900 lg:mb-4 mb-3 rounded-lg">
       <h3 className="text-xl font-semibold text-white">{name}</h3>
       <p className="max-w-lg text-slate-300">{description}</p>
     </div>
