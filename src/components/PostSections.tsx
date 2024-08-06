@@ -20,7 +20,9 @@ const PostSections = () => {
             </button>
           </div>
         </div>
-        <CardHoverEffectDemo />
+        <div className="mb-6 mt-2">
+          <CardHoverEffectDemo />
+        </div>
         <button className="w-full  inline-flex md:hidden lg:hidden px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
           Find Out
         </button>
