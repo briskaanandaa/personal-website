@@ -2,7 +2,7 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 
 const features = [
   {
-    name: "Berbinar.in Website",
+    name: "Berbinar Insightful",
     description: "Landing Page",
     href: "#",
     cta: "Learn more",

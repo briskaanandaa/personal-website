@@ -48,7 +48,7 @@ const BentoCard = ({
     )}
   >
     <div>{background}</div>
-    <div className="pointer-events-none z-10 flex transform-gpu flex-col w-fit gap-1 transition-all duration-300 group-hover:-translate-y-14 px-4 py-2 bg-slate-900 mx-4 mb-4 rounded-lg">
+    <div className="pointer-events-none z-10 flex transform-gpu flex-col lg:w-fit lg:mx-4 mx-auto w-[95%] gap-1 transition-all duration-300 group-hover:-translate-y-14 px-4 py-2 bg-slate-900 mb-4 rounded-lg">
       <h3 className="text-xl font-semibold text-white">{name}</h3>
       <p className="max-w-lg text-slate-300">{description}</p>
     </div>
@@ -58,7 +58,7 @@ const BentoCard = ({
         "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
       )}
     >
-      <button className=" pointer-events-auto px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
+      <button className="pointer-events-auto px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
         <a href={href}>{cta}</a>
       </button>
     </div>

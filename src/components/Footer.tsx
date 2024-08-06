@@ -16,7 +16,7 @@ const Footer = () => {
               Let&apos;s Connect
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-slate-500">
-              Our ollaboration can bring ideas to life.
+              Our collaboration can bring idea to life.
             </p>
           </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="w-full flex flex-col sm:flex-row justify-between mt-4 mb-2">
           <div className="text-sm font-normal text-slate-500 mb-4 sm:mb-2">
             <p>
-              Made with Next.js and joyfully designed in Figma by
+              Made with NextJs and joyfully designed in Figma by
               <span className="font-semibold"> Briska Ananda</span>
             </p>
           </div>

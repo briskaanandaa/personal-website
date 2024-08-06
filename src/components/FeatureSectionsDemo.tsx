@@ -12,7 +12,7 @@ export function FeaturesSectionDemo() {
     {
       title: "No Code Developer",
       description:
-        "Use no-code tools to build solutions quickly and efficientl, turning ideas into reality fast.",
+        "Use no-code tools to build solutions quickly and efficient, turning ideas into reality fast.",
       icon: <IconFrame />,
     },
     {
