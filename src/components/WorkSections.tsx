@@ -1,3 +1,5 @@
+import { BentoDemo } from "./BentoDemo";
+
 const WorkSections = () => {
   return (
     <div className="relative w-full h-fit flex justify-center bottom-0 py-5 z-10 bg-white">
@@ -18,6 +20,8 @@ const WorkSections = () => {
             </button>
           </div>
         </div>
+
+        <BentoDemo />
       </div>
     </div>
   );
