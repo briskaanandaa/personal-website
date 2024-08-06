@@ -53,7 +53,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundGradient,
       }}
-      className="flex gap-x-20 rounded-md mt-10 mb-2"
+      className="flex gap-x-20 rounded-md lg:mt-10 mt-2 mb-2"
       ref={ref}
     >
       <div className="relative flex items-start w-full">
@@ -61,7 +61,7 @@ export const StickyScroll = ({
           {content.map((item, index) => (
             <div
               key={item.title + index}
-              className="scroll-section mb-20 w-full p-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]  rounded-md"
+              className="scroll-section lg:mb-20 mb-10 w-full p-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]  rounded-md"
             >
               <motion.h2
                 initial={{
@@ -87,7 +87,7 @@ export const StickyScroll = ({
               </motion.p>
             </div>
           ))}
-          <div className="h-40" />
+          <div className="" />
         </div>
       </div>
       <div
