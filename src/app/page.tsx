@@ -13,7 +13,6 @@ export default function Home() {
       <HeaderGradient />
       <Navbar />
       <HeroSection />
-
       <FeaturesSectionDemo />
       <AboutSections />
       <WorkSections />

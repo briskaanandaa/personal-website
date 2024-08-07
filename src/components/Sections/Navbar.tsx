@@ -2,19 +2,13 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navItems = [
-  { title: "Home", value: "home", href: "#" },
-  { title: "About", value: "about", href: "#" },
-  { title: "Work", value: "work", href: "#" },
+  { title: "Home", value: "home", href: "/" },
+  { title: "About", value: "about", href: "/about" },
+  { title: "Work", value: "work", href: "/work" },
 ];
-
-const handleClick = (
-  event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-) => {
-  event.preventDefault(); // Mencegah tindakan default
-};
 
 const socialLinks = [
   {
@@ -134,6 +128,13 @@ export const Navbar = ({
   itemClassName?: string;
 }) => {
   const [active, setActive] = useState(navItems[0]);
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    const currentNavItem =
+      navItems.find((item) => item.href === path) || navItems[0];
+    setActive(currentNavItem);
+  }, []);
 
   const handleClick = (item: {
     title: string;
