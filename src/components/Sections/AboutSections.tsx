@@ -24,7 +24,7 @@ export const AboutSections = () => {
           <StickyScrollRevealDemo />
         </div>
         <button className="w-full  inline-flex md:hidden lg:hidden px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
-          Explore
+          <a href="/about">See More</a>
         </button>
       </div>
     </div>
