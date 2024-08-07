@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -130,20 +131,23 @@ export const Navbar = ({
   const [active, setActive] = useState(navItems[0]);
 
   useEffect(() => {
-    const path = window.location.pathname;
-    const currentNavItem =
-      navItems.find((item) => item.href === path) || navItems[0];
-    setActive(currentNavItem);
-  }, []);
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      const currentNavItem =
+        navItems.find((item) => item.href === path) || navItems[0];
+      setActive(currentNavItem);
+    };
 
-  const handleClick = (item: {
-    title: string;
-    value: string;
-    href: string;
-  }) => {
-    setActive(item);
-    window.location.href = item.href; // Redirect to the URL
-  };
+    // Set the initial active item
+    handlePopState();
+
+    // Listen for popstate events (when the user navigates with browser's back/forward buttons)
+    window.addEventListener("popstate", handlePopState);
+
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
 
   return (
     <div
@@ -160,32 +164,31 @@ export const Navbar = ({
       {/* Navbar Items */}
       <div className="flex flex-row items-center justify-center p-3 rounded-full bg-white lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
         {navItems.map((item) => (
-          <button
-            key={item.value}
-            onClick={() => handleClick(item)}
-            className="relative px-4 py-2 rounded-full focus:outline-none"
-          >
-            {active.value === item.value && (
-              <motion.div
-                layoutId="activeItem"
-                transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
-                className={cn(
-                  "absolute inset-0 rounded-full",
-                  "border border-slate-800 animate-shimmer bg-[linear-gradient(110deg,#0F172A,45%,#1e2631,55%,#0F172A)] bg-[length:200%_100%] transition-colors ring-4 ring-slate-300  "
-                )}
-              />
-            )}
-            <span
-              className={cn(
-                "relative block font-semibold",
-                active.value === item.value
-                  ? "text-white"
-                  : "text-black dark:text-white"
-              )}
+          <Link key={item.value} href={item.href}>
+            <button
+              onClick={() => setActive(item)}
+              className="relative px-4 py-2 rounded-full focus:outline-none"
             >
-              {item.title}
-            </span>
-          </button>
+              {active.value === item.value && (
+                <motion.div
+                  layoutId="activeItem"
+                  transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
+                  className={cn(
+                    "absolute inset-0 rounded-full",
+                    "border border-slate-800 animate-shimmer bg-[linear-gradient(110deg,#0F172A,45%,#1e2631,55%,#0F172A)] bg-[length:200%_100%] transition-colors ring-4 ring-slate-300"
+                  )}
+                />
+              )}
+              <span
+                className={cn(
+                  "relative block font-semibold",
+                  active.value === item.value ? "text-white" : "text-slate-900"
+                )}
+              >
+                {item.title}
+              </span>
+            </button>
+          </Link>
         ))}
       </div>
 
