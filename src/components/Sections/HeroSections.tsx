@@ -2,7 +2,7 @@ const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
-        <div className="w-full  flex flex-col justify-center">
+        <div className="w-full  flex flex-col justify-center py-3 md:py-5">
           <h1 className="text-4xl md:text-5xl font-semibold text-slate-900 flex mb-4 lg:mb-0 flex-col lg:flex-row gap-x-2 lg:items-center">
             Hey there! I&apos;m{" "}
             <span
