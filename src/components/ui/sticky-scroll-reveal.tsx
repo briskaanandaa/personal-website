@@ -9,6 +9,8 @@ export const StickyScroll = ({
 }: {
   content: {
     title: string;
+    year: string;
+    roles: string;
     description: string;
     content?: React.ReactNode | any;
   }[];
@@ -53,15 +55,15 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundGradient,
       }}
-      className="flex gap-x-20 rounded-md lg:mt-10 mt-2 mb-2"
+      className="flex gap-x-10 rounded-md lg:mt-10 mt-2 mb-2"
       ref={ref}
     >
       <div className="relative flex items-start w-full">
-        <div className="w-full">
+        <div className="w-full flex flex-col gap-y-10">
           {content.map((item, index) => (
             <div
               key={item.title + index}
-              className="scroll-section lg:mb-20 mb-10 w-full p-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]  rounded-md"
+              className="scroll-section w-full p-10 bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]  rounded-md"
             >
               <motion.h2
                 initial={{
@@ -81,6 +83,28 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
+                className="text-lg text-slate-500 mt-2"
+              >
+                {item.year}
+              </motion.p>
+              <motion.p
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: activeCard === index ? 1 : 0.3,
+                }}
+                className="text-lg text-slate-500 mt-5"
+              >
+                {item.roles}
+              </motion.p>
+              <motion.p
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: activeCard === index ? 1 : 0.3,
+                }}
                 className="text-lg text-slate-500 mt-5"
               >
                 {item.description}
@@ -93,7 +117,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md sticky top-28 overflow-hidden",
+          "hidden lg:block h-60 w-80 rounded-md sticky top-28 overflow-hidden mb-10",
           contentClassName
         )}
       >

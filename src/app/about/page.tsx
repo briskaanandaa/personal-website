@@ -13,10 +13,10 @@ const page = () => {
           <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
             <div className="mb-4 sm:mb-0">
               <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-4">
-                My Tech Stack
+                My Experiences
               </h1>
               <p className="text-lg sm:text-xl md:text-2xl text-slate-500 ">
-                See what I&apos;m working on now.
+                Dive into My Journey
               </p>
             </div>
           </div>
