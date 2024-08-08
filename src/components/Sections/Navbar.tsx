@@ -9,6 +9,7 @@ const navItems = [
   { title: "Home", value: "home", href: "/" },
   { title: "About", value: "about", href: "/about" },
   { title: "Work", value: "work", href: "/work" },
+  { title: "Blog", value: "blog", href: "/blog" },
 ];
 
 const socialLinks = [
