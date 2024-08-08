@@ -29,18 +29,15 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="h-full flex justify-center items-center w-full sm:w-auto">
-            <a href="mailto:briskaananda103@gmail.com">
-              <button className="hidden sm:inline-flex w-full sm:w-auto px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
-                Say Hello
-              </button>
-            </a>
+          <div className="flex flex-col sm:flex-row items-center w-full sm:w-auto">
+            <div className="w-full sm:w-auto mt-4 sm:mt-0">
+              <a href="mailto:briskaananda103@gmail.com">
+                <button className="w-full sm:w-auto inline-flex px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
+                  Say Hello
+                </button>
+              </a>
+            </div>
           </div>
-          <a href="mailto:briskaananda103@gmail.com">
-            <button className="w-full  inline-flex md:hidden lg:hidden px-6 py-2 items-center justify-center h-fit rounded-full font-semibold bg-gradient-to-b from-slate-700 to-slate-900 text-white ring-4 ring-slate-300 focus:ring-0 transition-all duration-500 ease-in-out transform-gpu focus:translate-y-1">
-              Say Hello
-            </button>
-          </a>
         </div>
 
         <div className="w-full flex flex-col sm:flex-row justify-between mt-4 mb-2">
