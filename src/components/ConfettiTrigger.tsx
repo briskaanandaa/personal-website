@@ -35,7 +35,7 @@ const ConfettiTrigger = () => {
   }, []);
 
   return (
-    <span onClick={triggerConfetti} className="cursor-pointer ">
+    <span onClick={triggerConfetti} className="cursor-pointer text-white">
       Briska Ananda
     </span>
   );
