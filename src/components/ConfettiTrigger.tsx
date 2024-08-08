@@ -1,4 +1,3 @@
-// components/ConfettiTrigger.tsx
 "use client"; // This directive indicates that this is a Client Component
 
 import confetti from "canvas-confetti";
@@ -35,7 +34,13 @@ const ConfettiTrigger = () => {
     frame();
   }, []);
 
-  return <span onClick={triggerConfetti}>Briska Ananda</span>;
+  return (
+    <span onClick={triggerConfetti} className="cursor-pointer ">
+      Briska Ananda
+    </span>
+  );
 };
+
+ConfettiTrigger.displayName = "ConfettiTrigger";
 
 export default ConfettiTrigger;
