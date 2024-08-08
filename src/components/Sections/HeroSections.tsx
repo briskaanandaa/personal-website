@@ -1,15 +1,17 @@
+import ConfettiTrigger from "@/components/ConfettiTrigger"; // Adjust the import path as necessary
+
 const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
-        <div className="w-full  flex flex-col justify-center py-3 md:py-5">
+        <div className="w-full flex flex-col justify-center py-3 md:py-5">
           <h1 className="text-4xl md:text-5xl font-semibold text-slate-900 flex mb-4 lg:mb-0 flex-col lg:flex-row gap-x-2 lg:items-center">
             Hey there! I&apos;m{" "}
             <span
-              className="px-4 py-2 md:ml-2 bg-gradient-to-r from-slate-900 to-slate-500 text-white rounded-lg  md:text-5xl w-fit shadow-lg"
+              className="px-4 py-2 md:ml-2 bg-gradient-to-r from-slate-900 to-slate-500 text-white rounded-lg md:text-5xl w-fit shadow-lg"
               style={{ transform: "rotate(-1deg)" }}
             >
-              Briska Ananda
+              <ConfettiTrigger />
             </span>
           </h1>
           <p className="text-lg sm:text-xl md:text-5xl md:text-slate-900 md:font-semibold text-slate-800 flex mb-4">
@@ -18,7 +20,7 @@ const HeroSection = () => {
           </p>
           <div className="flex flex-wrap gap-3 w-full">
             <a href="https://www.figma.com/">
-              <button className="gap-x-2  text-xs w-full sm:w-auto flex pl-1 pr-3 py-1 items-center justify-start align-center h-fit rounded-full font-semibold text-white border-2 bg-[#F24E1E]/50 border-[#F24E1E]">
+              <button className="gap-x-2 text-xs w-full sm:w-auto flex pl-1 pr-3 py-1 items-center justify-start align-center h-fit rounded-full font-semibold text-white border-2 bg-[#F24E1E]/50 border-[#F24E1E]">
                 <svg
                   width="22"
                   height="22"
@@ -145,6 +147,9 @@ const HeroSection = () => {
                 NextJs
               </button>
             </a>
+          </div>
+          <div className="mt-4">
+            <p className="font-semibold">*Please do not click on my name🚀</p>
           </div>
         </div>
         {/* <div className="lg:w-[50%] w-full h-fill relative flex justify-center ">

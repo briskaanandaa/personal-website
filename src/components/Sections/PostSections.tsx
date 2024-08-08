@@ -11,9 +11,9 @@ const PostSections = () => {
               <span
                 className="absolute bottom-0 left-0 w-full bg-gradient-to-r from-[#FE79B9] via-[#AD00FF] to-[#2489FF]"
                 style={{
-                  transform: "rotate(-2deg) translateY(12px)",
-                  height: "10px",
-                  clipPath: "polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%)",
+                  transform: "translateY(9px) translateX(3px)",
+                  height: "16px",
+                  clipPath: "polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%)",
                   zIndex: -1,
                 }}
               ></span>

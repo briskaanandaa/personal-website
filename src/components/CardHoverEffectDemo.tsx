@@ -9,39 +9,39 @@ export function CardHoverEffectDemo() {
 }
 export const projects = [
   {
-    title: "Stripe",
+    title: "How to use NextJs",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "This content is currently in progress and will be available soon. Please check back later for the full article",
     link: "",
   },
   {
-    title: "Netflix",
+    title: "Auto Layout in Figma",
     description:
-      "A technology company that builds economic infrastructure for the internet..",
+      "This content is currently in progress and will be available soon. Please check back later for the full article",
     link: "",
   },
   {
-    title: "Google",
+    title: "Framer Tips & Tricks",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "This content is currently in progress and will be available soon. Please check back later for the full article",
     link: "",
   },
   {
-    title: "Meta",
+    title: "Why Shadcn ?",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "This content is currently in progress and will be available soon. Please check back later for the full article",
     link: "",
   },
   {
-    title: "Amazon",
+    title: "Hi-Fi Prototypes",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "This content is currently in progress and will be available soon. Please check back later for the full article",
     link: "",
   },
   {
-    title: "Microsoft",
+    title: "Tailwind for styling",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
+      "This content is currently in progress and will be available soon. Please check back later for the full article",
     link: "",
   },
 ];
