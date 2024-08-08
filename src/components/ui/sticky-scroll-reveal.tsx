@@ -56,7 +56,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundGradient,
       }}
-      className="flex gap-x-10 rounded-md lg:mt-10 mt-2"
+      className="flex gap-x-10 rounded-md lg:mt-10 mt-2 mb-6"
       ref={ref}
     >
       <div className="relative flex items-start w-full">
