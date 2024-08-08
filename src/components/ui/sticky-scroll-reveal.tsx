@@ -32,9 +32,10 @@ export const StickyScroll = ({
   const handleScroll = () => {
     const sectionRefs = document.querySelectorAll(".scroll-section");
     sectionRefs.forEach((section, index) => {
+      const rect = section.getBoundingClientRect();
       if (
-        section.getBoundingClientRect().top < window.innerHeight / 2 &&
-        section.getBoundingClientRect().bottom > window.innerHeight / 2
+        rect.top < window.innerHeight / 2 &&
+        rect.bottom > window.innerHeight / 2
       ) {
         setActiveCard(index);
       }
@@ -43,7 +44,7 @@ export const StickyScroll = ({
 
   useEffect(() => {
     setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
-  }, [activeCard]);
+  }, [activeCard, linearGradients]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -55,7 +56,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundGradient,
       }}
-      className="flex gap-x-10 rounded-md lg:mt-10 mt-2 mb-2"
+      className="flex gap-x-10 rounded-md lg:mt-10 mt-2"
       ref={ref}
     >
       <div className="relative flex items-start w-full">
@@ -111,18 +112,20 @@ export const StickyScroll = ({
               </motion.p>
             </div>
           ))}
-          <div className="" />
         </div>
       </div>
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md sticky top-28 overflow-hidden mb-10",
+          "hidden lg:block h-60 w-80 rounded-md sticky top-28 overflow-hidden",
           contentClassName
         )}
       >
-        {content[activeCard].content ?? null}
+        {content[activeCard]?.content ?? null}
       </div>
     </motion.div>
   );
 };
+
+// Menambahkan displayName untuk kemudahan debugging
+StickyScroll.displayName = "StickyScroll";
