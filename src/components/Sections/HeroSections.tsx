@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
-        <div className="w-full flex flex-col justify-center py-3 md:py-0">
+        <div className="w-full flex flex-col justify-center py-0">
           <div className="mb-3">
             <BorderBeamDemo />
           </div>
