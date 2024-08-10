@@ -163,7 +163,7 @@ export const Navbar = ({
       </h1>
 
       {/* Navbar Items */}
-      <div className="flex flex-row items-center justify-center p-3 rounded-full bg-white lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2">
+      <div className="flex flex-row items-center justify-center p-3 rounded-full bg-white lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]">
         {navItems.map((item) => (
           <Link key={item.value} href={item.href}>
             <button
