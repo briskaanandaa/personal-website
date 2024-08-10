@@ -1,4 +1,5 @@
 import { CardHoverEffectDemo } from "@/components/CardHoverEffectDemo";
+import { CardHoverEffectDemofull } from "@/components/CardHoverEffectDemoFull";
 import Footer from "@/components/Sections/Footer";
 import HeaderGradient from "@/components/Sections/HeaderGradient";
 import { Navbar } from "@/components/Sections/Navbar";
@@ -30,7 +31,7 @@ const page = () => {
             </div>
           </div>
           <div className="mb-6 mt-2">
-            <CardHoverEffectDemo />
+            <CardHoverEffectDemofull />
           </div>
         </div>
       </div>
