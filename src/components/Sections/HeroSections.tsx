@@ -1,10 +1,14 @@
 import ConfettiTrigger from "@/components/ConfettiTrigger"; // Adjust the import path as necessary
+import { BorderBeamDemo } from "../BorderBeamDemo";
 
 const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
         <div className="w-full flex flex-col justify-center py-3 md:py-5">
+          <div className="mb-3">
+            <BorderBeamDemo />
+          </div>
           <h1 className="text-4xl md:text-5xl font-semibold text-slate-900 flex mb-4 lg:mb-0 flex-col lg:flex-row gap-x-2 lg:items-center">
             Hey there! I&apos;m{" "}
             <span
@@ -147,9 +151,6 @@ const HeroSection = () => {
                 NextJs
               </button>
             </a>
-          </div>
-          <div className="mt-4">
-            <p className="font-semibold">*Please do not click on my name🚀</p>
           </div>
         </div>
         {/* <div className="lg:w-[50%] w-full h-fill relative flex justify-center ">
