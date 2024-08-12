@@ -6,6 +6,7 @@ import HeroSection from "@/components/Sections/HeroSections";
 import { Navbar } from "@/components/Sections/Navbar";
 import PostSections from "@/components/Sections/PostSections";
 import WorkSections from "@/components/Sections/WorkSections";
+import { TextGenerateEffectDemo } from "@/components/TextGenerateEffectDemo";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <AboutSections />
       <WorkSections />
       <PostSections />
+      <TextGenerateEffectDemo />
       <Footer />
     </main>
   );

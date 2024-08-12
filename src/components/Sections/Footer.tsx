@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
           <div className="mb-4 sm:mb-0">
             <h1 className="relative text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-6 inline-block">
-              Let&apos;s Connect
+              Let&apos;s Talk About
               <span
                 className="absolute bottom-0 left-0 w-full bg-gradient-to-r from-[#FE79B9] via-[#AD00FF] to-[#2489FF]"
                 style={{

@@ -75,7 +75,7 @@ export const projects = [
     link: "",
   },
   {
-    title: "Arc for developmer",
+    title: "Arc for developer",
     description:
       "This content is currently in progress and will be available soon. Please check back later for the full article",
     link: "",
