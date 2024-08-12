@@ -6,9 +6,9 @@ const HeroSection = () => {
     <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
         <div className="w-full flex flex-col justify-center py-0">
-          <div className="mb-3">
+          {/* <div className="mb-3">
             <BorderBeamDemo />
-          </div>
+          </div> */}
           <h1 className="text-4xl md:text-5xl font-semibold text-slate-900 flex mb-4 lg:mb-0 flex-col lg:flex-row gap-x-2 lg:items-center">
             Hey there! I&apos;m{" "}
             <span
