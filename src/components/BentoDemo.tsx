@@ -4,7 +4,7 @@ const features = [
   {
     name: "Work in Progress",
     description: "Exciting updates ahead!",
-    href: "#",
+    href: "/casestudy/case-1",
     cta: "Case Study",
     className: "col-span-3 lg:col-span-1",
     background: "",
@@ -12,7 +12,7 @@ const features = [
   {
     name: "Work in Progress",
     description: "Exciting updates ahead!",
-    href: "#",
+    href: "/casestudy/case-1",
     cta: "Case Study",
     className: "col-span-3 lg:col-span-2",
     background: "",
@@ -20,7 +20,7 @@ const features = [
   {
     name: "Work in Progress",
     description: "Exciting updates ahead!",
-    href: "#",
+    href: "/casestudy/case-1",
     cta: "Case Study",
     className: "col-span-3 lg:col-span-2",
     background: "",
@@ -29,7 +29,7 @@ const features = [
     name: "Work in Progress",
     description: "Exciting updates ahead!",
     className: "col-span-3 lg:col-span-1",
-    href: "#",
+    href: "/casestudy/case-1",
     cta: "Case Study",
     background: "",
   },
