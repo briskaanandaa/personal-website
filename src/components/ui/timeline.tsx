@@ -33,21 +33,26 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
-      ref={containerRef}
-    >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
-        </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+    <div className="w-full font-sans" ref={containerRef}>
+      <div className="mb-4 sm:mb-0  py-3 md:py-5">
+        <h1 className="relative text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-6 inline-block">
+          My Recent Posts
+          <span
+            className="absolute bottom-0 left-0 w-full bg-gradient-to-r from-[#FE79B9] via-[#AD00FF] to-[#2489FF]"
+            style={{
+              transform: "translateY(9px) translateX(3px)",
+              height: "16px",
+              clipPath: "polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%)",
+              zIndex: -1,
+            }}
+          ></span>
+        </h1>
+        <p className="text-lg sm:text-xl md:text-2xl text-slate-500 ">
+          Discover my process here.
         </p>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative  mx-auto pb-20">
         {data.map((item, index) => (
           <div
             key={index}
@@ -81,7 +86,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-[#FE79B9] via-[#AD00FF] to-[#2489FF] rounded-full"
           />
         </div>
       </div>
