@@ -36,7 +36,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="w-full " ref={containerRef}>
       <div className="mb-4 sm:mb-0  py-3 md:py-5">
         <h1 className="relative text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-6 inline-block">
-          My Recent Posts
+          Sisyphus
           <span
             className="absolute bottom-0 left-0 w-full bg-gradient-to-r from-[#FE79B9] via-[#AD00FF] to-[#2489FF]"
             style={{
@@ -48,7 +48,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           ></span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-slate-500 ">
-          Discover my process here.
+          Website Design
         </p>
       </div>
 
@@ -68,7 +68,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
 
             <div className="relative pl-20 pr-4 md:pl-4 w-full">
-              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-slate-500">
+              <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-slate-900">
                 {item.title}
               </h3>
               {item.content}{" "}
