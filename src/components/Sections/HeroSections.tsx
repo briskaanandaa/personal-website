@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10">
       <div className="w-[90vw] md:w-[75vw] flex flex-col lg:flex-row">
-        <div className="w-full flex flex-col justify-center py-0">
+        <div className="w-full flex flex-col justify-center py-3">
           {/* <div className="mb-3">
             <BorderBeamDemo />
           </div> */}
@@ -22,7 +22,7 @@ const HeroSection = () => {
             A happy Web Developer who loves creating beautiful web experiences
             &amp; help others grow in web development.
           </p>
-          <div className="flex flex-wrap gap-3 w-full">
+          <div className="flex flex-wrap gap-3 w-full py-2">
             <a href="https://www.figma.com/">
               <button className="gap-x-2 text-xs w-full sm:w-auto flex pl-1 pr-3 py-1 items-center justify-start align-center h-fit rounded-full font-semibold text-white border-2 bg-[#F24E1E]/50 border-[#F24E1E]">
                 <svg
