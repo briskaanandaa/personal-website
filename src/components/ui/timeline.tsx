@@ -34,7 +34,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div className="w-full " ref={containerRef}>
-      <div className="mb-4 sm:mb-0  py-3 md:py-5">
+      <div className="mb-4 sm:mb-0">
         <h1 className="relative text-4xl sm:text-4xl md:text-5xl font-semibold text-slate-900 mb-6 inline-block">
           Sisyphus
           <span
@@ -58,7 +58,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             key={index}
             className="flex justify-start pt-10 md:pt-20 pb-20 md:gap-10"
           >
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start">
+            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start w-6/12 ">
               <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full  bg-gradient-to-b from-slate-700 to-slate-900  ring-4 ring-slate-300 p-2" />
               </div>
@@ -67,7 +67,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </h3>
             </div>
 
-            <div className="relative pl-20 pr-4 md:pl-4 w-full">
+            <div className="relative w-full">
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold text-slate-900">
                 {item.title}
               </h3>
