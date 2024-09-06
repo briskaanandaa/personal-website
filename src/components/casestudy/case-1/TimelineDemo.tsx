@@ -48,7 +48,7 @@ export function TimelineDemo() {
       title: "Early 2023",
       content: (
         <div>
-          <p className="text-slate-500  text-sm md:text-lg mb-8">
+          <p className="text-slate-500  text-sm md:text-lg mb-4">
             I usually run out of copy, but when I see content this big, I try to
             integrate lorem ipsum.
           </p>
@@ -93,7 +93,7 @@ export function TimelineDemo() {
       title: "Changelog",
       content: (
         <div>
-          <p className="text-slate-500  text-sm md:text-lg mb-8">
+          <p className="text-slate-500  text-sm md:text-lg mb-4">
             Deployed 5 new components on Aceternity today
           </p>
           <div className="mb-8 text-slate-500  text-sm md:text-lg">
