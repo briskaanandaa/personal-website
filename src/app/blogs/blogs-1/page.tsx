@@ -3,17 +3,19 @@ import { TimelineDemo } from "@/components/casestudy/case-1/TimelineDemo";
 import HeaderGradient from "@/components/Sections/HeaderGradient";
 import { Navbar } from "@/components/Sections/Navbar";
 import Footer from "@/components/Sections/Footer";
-import { NavbarWork } from "@/components/Sections/NavbarWork";
+
+import { TracingBeamDemo } from "@/components/blogs/blogs-1/TracingBeamDemo";
+import { NavbarBlog } from "@/components/Sections/NavbarBlog";
 
 const page = () => {
   return (
     <main className="flex flex-col h-fit w-full bg-white">
       <HeaderGradient />
-      <NavbarWork />
+      <NavbarBlog />
 
       <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10e">
         <div className="relative w-[90vw] md:w-[75vw] h-fit z-10">
-          <TimelineDemo />
+          <TracingBeamDemo />
         </div>
       </div>
       <Footer />

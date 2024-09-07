@@ -120,7 +120,7 @@ const socialLinks = [
   },
 ];
 
-export const NavBack = ({
+export const NavbarWork = ({
   containerClassName,
   activeItemClassName,
   itemClassName,
@@ -129,17 +129,18 @@ export const NavBack = ({
   activeItemClassName?: string;
   itemClassName?: string;
 }) => {
-  const [active, setActive] = useState(navItems[0]);
+  // Set initial state to "Work" as the active item
+  const [active, setActive] = useState(navItems[2]); // "Work" is the 3rd item in the array (index 2)
 
   useEffect(() => {
     const handlePopState = () => {
       const path = window.location.pathname;
       const currentNavItem =
-        navItems.find((item) => item.href === path) || navItems[0];
+        navItems.find((item) => item.href === path) || navItems[2]; // Default to "Work"
       setActive(currentNavItem);
     };
 
-    // Set the initial active item
+    // Set the initial active item based on URL
     handlePopState();
 
     // Listen for popstate events (when the user navigates with browser's back/forward buttons)
@@ -153,30 +154,59 @@ export const NavBack = ({
   return (
     <div
       className={cn(
-        "flex flex-row  justify-start mx-auto w-[90vw] md:w-[75vw] z-10 mt-[4vh] lg:mt-[3vh]",
+        "flex flex-col lg:flex-row items-center justify-center lg:justify-between mx-auto w-[90vw] md:w-[75vw] z-10 mt-[4vh] lg:mt-[6vh]",
         containerClassName
       )}
     >
       {/* Logo */}
+      <h1 className="text-3xl font-semibold text-slate-900 hidden lg:block">
+        Briska
+      </h1>
 
       {/* Navbar Items */}
-      <div className="flex flex-row items-center justify-center rounded-full">
-        <a href="/">
-          <button className=" inline-flex gap-x-4 px-6 py-2 bg-white hover:bg-opacity-90 justify-center  rounded-full font-semibold [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="icon icon-tabler icons-tabler-filled icon-tabler-home"
+      <div className="flex flex-row items-center justify-center p-3 rounded-full bg-white lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]">
+        {navItems.map((item) => (
+          <Link key={item.value} href={item.href}>
+            <button
+              onClick={() => setActive(item)}
+              className="relative px-4 py-2 rounded-full focus:outline-none"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
-            </svg>
-            Main Page
-          </button>
-        </a>
+              {active.value === item.value && (
+                <motion.div
+                  layoutId="activeItem"
+                  transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
+                  className={cn(
+                    "absolute inset-0 rounded-full",
+                    "border border-slate-800 animate-shimmer bg-[linear-gradient(110deg,#0F172A,45%,#1e2631,55%,#0F172A)] bg-[length:200%_100%] transition-colors ring-4 ring-slate-300"
+                  )}
+                />
+              )}
+              <span
+                className={cn(
+                  "relative block font-semibold",
+                  active.value === item.value ? "text-white" : "text-slate-900"
+                )}
+              >
+                {item.title}
+              </span>
+            </button>
+          </Link>
+        ))}
+      </div>
+
+      {/* Social Media Icons */}
+      <div className="space-x-6 hidden lg:flex">
+        {socialLinks.map((link) => (
+          <a
+            key={link.href}
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black dark:text-white"
+          >
+            {link.svg}
+          </a>
+        ))}
       </div>
     </div>
   );
