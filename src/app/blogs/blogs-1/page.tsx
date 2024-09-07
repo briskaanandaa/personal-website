@@ -13,9 +13,11 @@ const page = () => {
       <HeaderGradient />
       <NavbarBlog />
 
-      <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10e">
+      <div className="w-full h-fit flex justify-center mt-5 md:mt-10 md:mb-0 z-10">
         <div className="relative w-[90vw] md:w-[75vw] h-fit z-10">
-          <TracingBeamDemo />
+          <div className="flex flex-col sm:flex-row align-center justify-between py-3 md:py-5">
+            <TracingBeamDemo />
+          </div>
         </div>
       </div>
       <Footer />

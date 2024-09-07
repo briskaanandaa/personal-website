@@ -10,13 +10,13 @@ export function FeaturesSectionDemo() {
       icon: <IconPencilCode />,
     },
     {
-      title: "No Code Developer",
+      title: "Low Code Developer",
       description:
         "Use no-code tools to build solutions quickly and efficient, turning ideas into reality fast.",
       icon: <IconFrame />,
     },
     {
-      title: "Front-End Developer",
+      title: "Front End Developer",
       description:
         "Transform designs into websites, making them function smoothly and easy to use.",
       icon: <IconCode />,
