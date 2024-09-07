@@ -78,14 +78,18 @@ const dummyContent = [
         <pre className="bg-gray-900 text-green-300 p-4 rounded-lg shadow-lg overflow-auto my-4">
           <code>npm run dev</code>
         </pre>
+        <h1 className="text-lg font-semibold mt-6 mb-2">
+          Congratulations, your Next.js project is up and running!
+        </h1>
         <p>
-          <span className="font-medium">
-            Congratulations, your Next.js project is up and running!
-          </span>{" "}
           Now, it's time to make it your own. You can start customizing by
           modifying the default content in the pages/index.js file of your
-          project.
+          project. The production is live on{" "}
+          <span className="font-medium">localhost:3000</span>
         </p>
+        <pre className="bg-gray-900 text-green-300 p-4 rounded-lg shadow-lg overflow-auto my-4">
+          <code>localhost:300</code>
+        </pre>
       </>
     ),
     badge: "Developer",
