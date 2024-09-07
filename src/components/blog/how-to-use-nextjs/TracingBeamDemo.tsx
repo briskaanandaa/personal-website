@@ -42,16 +42,16 @@ const dummyContent = [
       <>
         <p>
           Next.js is a powerful React framework that allows developers to build
-          fast, user-friendly web applications. Whether you're creating dynamic
-          websites or static pages, Next.js provides a smooth experience for
-          both beginners and seasoned developers. In this guide, we’ll walk you
-          through the basics of getting started with Next.js.
+          fast, user-friendly web applications. Whether you&apos;re creating
+          dynamic websites or static pages, Next.js provides a smooth experience
+          for both beginners and seasoned developers. In this guide, we&apos;ll
+          walk you through the basics of getting started with Next.js.
         </p>
         <h1 className="text-lg font-semibold mt-6">What is Next.js?</h1>
         <p>
           Next.js is a React framework that makes building web applications
           easier by providing features like server-side rendering, static site
-          generation, and more. It’s designed to help developers focus on
+          generation, and more. It&apos;s designed to help developers focus on
           writing code, while it handles performance optimizations and routing.
         </p>
         <h1 className="text-lg font-semibold mt-6 mb-2">Install Node.js</h1>
@@ -60,7 +60,8 @@ const dummyContent = [
           <a href="https://nodejs.org/" className="text-[#AD00FF] font-medium">
             Node.js
           </a>{" "}
-          installed. You’ll need it to manage packages and run your project.
+          installed. You&apos;ll need it to manage packages and run your
+          project.
         </p>
         <h1 className="text-lg font-semibold mt-6 mb-2">
           Setting Up Your Next.js Project
@@ -82,7 +83,7 @@ const dummyContent = [
           Congratulations, your Next.js project is up and running!
         </h1>
         <p>
-          Now, it's time to make it your own. You can start customizing by
+          Now, it&apos;s time to make it your own. You can start customizing by
           modifying the default content in the pages/index.js file of your
           project. The production is live on{" "}
           <span className="font-medium">localhost:3000</span>
