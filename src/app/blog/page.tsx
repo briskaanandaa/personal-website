@@ -1,5 +1,5 @@
-import { CardHoverEffectDemo } from "@/components/CardHoverEffectDemo";
-import { CardHoverEffectDemofull } from "@/components/CardHoverEffectDemoFull";
+import { CardHoverEffectDemo } from "@/components/blog/CardHoverEffectDemo";
+import { CardHoverEffectDemofull } from "@/components/blog/CardHoverEffectDemoFull";
 import Footer from "@/components/Sections/Footer";
 import HeaderGradient from "@/components/Sections/HeaderGradient";
 import { Navbar } from "@/components/Sections/Navbar";

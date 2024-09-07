@@ -1,4 +1,4 @@
-import { CardHoverEffectDemo } from "../CardHoverEffectDemo";
+import { CardHoverEffectDemo } from "../blog/CardHoverEffectDemo";
 
 const PostSections = () => {
   return (

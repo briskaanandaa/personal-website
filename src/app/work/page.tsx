@@ -1,4 +1,4 @@
-import { BentoDemo } from "@/components/BentoDemo";
+import { BentoDemo } from "@/components/work/BentoDemo";
 import Footer from "@/components/Sections/Footer";
 import HeaderGradient from "@/components/Sections/HeaderGradient";
 import { Navbar } from "@/components/Sections/Navbar";

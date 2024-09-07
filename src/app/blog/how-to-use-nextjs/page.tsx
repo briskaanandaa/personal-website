@@ -1,10 +1,10 @@
 import React from "react";
-import { TimelineDemo } from "@/components/casestudy/case-1/TimelineDemo";
+import { TimelineDemo } from "@/components/work/sisyphus/TimelineDemo";
 import HeaderGradient from "@/components/Sections/HeaderGradient";
 import { Navbar } from "@/components/Sections/Navbar";
 import Footer from "@/components/Sections/Footer";
 
-import { TracingBeamDemo } from "@/components/blogs/blogs-1/TracingBeamDemo";
+import { TracingBeamDemo } from "@/components/blog/how-to-use-nextjs/TracingBeamDemo";
 import { NavbarBlog } from "@/components/Sections/NavbarBlog";
 
 const page = () => {

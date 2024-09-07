@@ -1,4 +1,4 @@
-import { BentoDemo } from "../BentoDemo";
+import { BentoDemo } from "../work/BentoDemo";
 
 const WorkSections = () => {
   return (
